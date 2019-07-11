@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.portfolio-header{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+.logo img{
+    height: 100px;
+}
+.main-info h1 {
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 40px;
+    margin-top: 0;
+}
+.main-info p{
+    margin: 0;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+.main-image img{
+    width: 100%;
+}
+.my-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.my-work h2 {
+    font-family: cursive;
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+}
+.my-work figure{
+    width: 35%;
+    height: 200px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 20px 0;
+}
+.my-work figure img{
+    width: 65%;
+    height: 100%;
+}
+.my-work figcaption a{
+    text-decoration: none;
+    color: #000;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 600;
+}
+@media screen and (max-width: 767px){
+    .portfolio-header .logo , .portfolio-header .main-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-work figure{width: 100%;}
+}
